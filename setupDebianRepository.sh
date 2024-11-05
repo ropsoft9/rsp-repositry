@@ -3,7 +3,7 @@
 ### RUN THIS ON Remote Host
 # No sense to run this script on local
 
-mkdir debian;
+mkdir -p debian;
 
 dpkg-scanpackages debian > debian/Packages
 dpkg-scanpackages debian /dev/null | gzip -9c > debian/Packages.gz
